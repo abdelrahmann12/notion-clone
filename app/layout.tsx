@@ -4,6 +4,8 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import SidebarClient from "@/components/Sidebar/SidebarClient";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +35,7 @@ export default function RootLayout({
         >
           <Header></Header>
           <div className="flex min-h-screen">
-            <Sidebar></Sidebar>
+            <SidebarClient></SidebarClient>
             <div className="flex-1 p-4 bg-gray-100">{children}</div>
           </div>
         </body>
