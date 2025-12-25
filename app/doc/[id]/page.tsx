@@ -8,7 +8,7 @@ export default function DocumentPage () {
   return (
     <div className="flex flex-col min-h-screen">
       <Document id={id}></Document>
-      Document Page : {id}
+      Document Page is here : {id}
     </div>
   )
 }
